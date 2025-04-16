@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu Personagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="personagem.php" method="post">
+        <h1>Crie seu Personagem!</h1>
+
+        <label for="nome" class="label-title">Nome do Personagem:</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="cor_cabelo" class="label-title">Cor do Cabelo:</label>
+        <select name="cor_cabelo" id="cor_cabelo">
+            <option value="preto">Preto</option>
+            <option value="castanho">Castanho</option>
+            <option value="loiro">Loiro</option>
+            <option value="ruivo">Ruivo</option>
+        </select>
+
+        <label class="label-title">Estilo do Cabelo:</label>
+        <div class="radio-group">
+            <div class="radio-item">
+                <input type="radio" name="estilo_cabelo" id="curto" value="curto">
+                <label for="curto">Curto</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" name="estilo_cabelo" id="longo" value="longo">
+                <label for="longo">Longo</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" name="estilo_cabelo" id="cacheado" value="cacheado">
+                <label for="cacheado">Cacheado</label>
+            </div>
+        </div>
+
+        <label class="label-title">Acessório:</label>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" name="acessorio[]" id="oculos" value="oculos">
+                <label for="oculos">Óculos</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" name="acessorio[]" id="chapeu" value="chapeu">
+                <label for="chapeu">Chapéu</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" name="acessorio[]" id="brinco" value="brinco">
+                <label for="brinco">Brinco</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Criar Personagem">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
