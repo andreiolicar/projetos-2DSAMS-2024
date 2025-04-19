@@ -50,10 +50,14 @@ public class Calculadora {
         this.setN1(Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número:")));
         this.setN2(Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número:")));
         this.setR(this.getN1() + this.getN2());
+        JOptionPane.showMessageDialog(null, "Resultado da Soma: " + this.getR());
     }
 
     public void subtrair(double a, double b) {
-        this.setR(a - b);
+        this.setN1(a);
+        this.setN2(b);
+        this.setR(this.getN1() - this.getN2());
+        JOptionPane.showMessageDialog(null, "Resultado da Subtração: " + this.getR());
     }
 
     public double multiplicar() {

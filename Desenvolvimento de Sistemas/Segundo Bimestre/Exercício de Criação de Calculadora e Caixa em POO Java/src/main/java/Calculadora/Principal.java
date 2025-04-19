@@ -21,13 +21,11 @@ public class Principal {
             switch (op) {
                 case 1:
                     cal.somar();
-                    JOptionPane.showMessageDialog(null, "Resultado da Soma: " + cal.getR());
                     break;
                 case 2:
                     double num1Sub = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número:"));
                     double num2Sub = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número:"));
                     cal.subtrair(num1Sub, num2Sub);
-                    JOptionPane.showMessageDialog(null, "Resultado da Subtração: " + cal.getR());
                     break;
                 case 3:
                     double resultadoMult = cal.multiplicar();
